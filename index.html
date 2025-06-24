@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Kahvila Tasty Joensuussa - viihtyisä kahvila ja tilauskakkujen valmistaja. Tarjoamme tuoreita leivonnaisia, erinomaista kahvia ja tilauskakkuja erikoistilaisuuksiin." />
+        <meta name="keywords" content="kahvila, Joensuu, tilauskakut, leivonnaiset, kahvi, lounas, diplomaattikakku, mustikkajuustokakku, suklaakakku" />
+        <meta name="author" content="Kahvila Tasty" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Kahvila Tasty - Kahvila ja Tilauskakut Joensuussa" />
+        <meta property="og:description" content="Viihtyisä kahvila Joensuun keskustassa. Tarjoamme tuoreita leivonnaisia, erinomaista kahvia ja tilauskakkuja." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kahvilatasty.fi" />
+        <meta property="og:image" content="images/TastyLogo.jpg" />
+        <link rel="canonical" href="https://kahvilatasty.fi" />
+        <script src="https://kit.fontawesome.com/6fb181def8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>Kahvila Tasty - Kahvila ja Tilauskakut Joensuussa</title>
+    </head>
+    <body>
+        <header class="header" role="banner">
+            <a href="" class="logo" aria-label="Kahvila Tasty logo"><img src="images/TastyLogo.jpg" alt="Kahvila Tasty logo" /></a>
+            <nav class="navbar" role="navigation" aria-label="Päävalikko">
+                <a href="#home">Etusivu</a>
+                <a href="#order-cakes">Tilauskakut</a>
+                <a href="#cafe">Kahvila</a>
+                <a href="#contact">Yhteystiedot</a>
+                <a href="https://wolt.com/fi/fin/joensuu/restaurant/tasty-delicous-story?srsltid=AfmBOopG7nluu65uBSaNGYTY1Qph45H6UOLP4cvO20AfmiN3Kr41bSue" target="_blank" class="delivery-link" rel="noopener noreferrer">Wolt</a>
+                <a href="https://www.foodora.fi/restaurant/luah/tasty-delicious-story" target="_blank" class="delivery-link" rel="noopener noreferrer">Foodora</a>
+            </nav>
+            <div class="icons">
+                <div class="menu-icon" role="button" aria-label="Valikko"><i class="fas fa-bars"></i> </div>
+            </div>
+        </header>
+        <main>
+            <section class="home" id="home" aria-labelledby="home-title">
+                <div class="hero">
+                    <h1 id="home-title">Tasty - Kahvila Joensuussa</h1>
+                    <p>Tervetuloa käymään kahvilassamme. Meiltä saat myös tilauskakkuja. Selaa valikoimaamme 🩷</p>
+                </div>
+            </section>
+            <section class="order-cakes" id="order-cakes" aria-labelledby="cakes-title">
+                <h2 id="cakes-title" class="title">Tilaus<span>kakut</span></h2>
+                <p class="section-intro">Täällä voit selata kakkujamme ja löytää täydellisen valinnan juhliisi. 🩷<br>
+                    Tilata voit joko täyttämällä alla olevan tilauslomakkeen, soittamalla numeroon 045 6187 829 (englanniksi) tai
+                    tulemalla paikan päälle kahvilaamme.<br><br>
+                    Kakkujen koot:<br>
+                    Iso — 24 cm, n. 12-14 henkilölle.<br>
+                    Pieni — 17 cm, n. 6-8 henkilölle.
+                </p>
+                
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/DiplomatCakePinkBackground.jpeg">
+                        </div>
+                        <div class="content">
+                            <a>Diplomaattikakku</a>
+                            <p>Klassinen diplomaattikakku, jossa on kermavaahtoa ja mansikoita. Täydellinen valinta syntymäpäiväjuhliin tai muihin erikoistilaisuuksiin.</p>
+                            <a class="btn btn-primary" href="#order-form">Tilaa kakku</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/Blueberry Cheesecake.jpg">
+                        </div>
+                        <div class="content">
+                            <a>Mustikkajuustokakku</a>
+                            <p>Kotitekoinen mustikkajuustokakku tuoreilla mustikoilla. Herkullinen yhdistelmä pehmeää juustokakkua ja marjoja.</p>
+                            <a class="btn btn-primary" href="#order-form">Tilaa kakku</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/FantaCake.jpg">
+                        </div>
+                        <div class="content">
+                            <a>Appelsiinijuustokakku</a>
+                            <p>Kermainen ja raikas juustokakku, jossa on täyteläinen appelsiinin maku ja rapea keksipohja. Täydellinen valinta sitrusherkkujen ystäville.</p>
+                            <a class="btn btn-primary" href="#order-form">Tilaa kakku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-form" id="order-form">
+                    <h2 class="subtitle">Tilaus<span>lomake</span></h2>
+                    <div class="contents">
+                        <form action="mailto:tastyds.orders@gmail.com" method="POST" enctype="text/plain">
+                            <h3>Tilaa kakku</h3>
+                            <div class="input-box">
+                                <span class="fas fa-user"></span>
+                                <input type="text" name="name" placeholder="Nimi" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="fas fa-envelope"></span>
+                                <input type="email" name="email" placeholder="Sähköposti" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="fas fa-phone"></span>
+                                <input type="tel" name="phone" placeholder="Puhelinnumero" required>
+                            </div>
+
+                     <!--       <div class="input-box">
+                                <span class="fas fa-cake-candles"></span>
+                                <select name="cake" required>
+                                    <option value="">Valitse kakku</option>
+                                    <option value="diplomat">Diplomaattikakku</option>
+                                    <option value="blueberry">Mustikkajuustokakku</option>
+                                    <option value="chocolate">Suklaakakku</option>
+                                </select>
+                            </div>
+                        
+                            <div class="input-box">
+                                <span class="fas fa-calendar"></span>
+                                <input type="date" name="date" required>
+                            </div>
+                        -->
+                            <div class="input-box">
+                                <span class="fas fa-comment"></span>
+                                <textarea name="message" placeholder="Viesti" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Lähetä tilaus</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="cafe" id="cafe">
+                <h1 class="title">Kahvila</span></h1>
+                <div class="cafe-info">
+                    <div class="info-box">
+                        <h3>Kahvila Tasty</h3>
+                        <p>Tervetuloa viihtyisään kahvilaamme Joensuuhun! Kahvila Tasty sijaitsee osoitteessa Petrankatu 2, helposti löydettävällä paikalla.</p>
+                        <div class="opening-hours">
+                            <h4>Aukioloajat:</h4>
+                            <p>Maanantai - Torstai: 10:00 - 19:00</p>
+                            <p>Perjantai: 10:00 - 15:30</p>
+                            <p>Lauantai: Suljettu</p>
+                            <p>Sunnuntai: 10:30 - 19:00</p>
+                        </div>
+                        <p>Kahvilamme tarjoaa rauhallisen ja viihtyisän tunnelman, jossa voit nauttia tuoreista leivonnaisista ja erinomaisesta kahvista. Meiltä löydät myös herkullisen ruokamenun ja runsaan valikoiman herkkuja.</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/TastyLogo.jpg">
+                        </div>
+                        <div class="content">
+                            <a>Kahvi ja leivonnaiset</a>
+                            <p>Tuoreet leivonnaiset ja erinomaisen makuinen kahvi.</p>
+                            <a class="btn btn-secondary" href="https://wolt.com/fi/helsinki/restaurant/kahvila-tasty" target="_blank">Tilaa Woltista</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/TastyLogo.jpg">
+                        </div>
+                        <div class="content">
+                            <a>Lounas</a>
+                            <p>Päivittäin vaihtuva lounasmenu.</p>
+                            <a class="btn btn-secondary" href="https://wolt.com/fi/helsinki/restaurant/kahvila-tasty" target="_blank">Tilaa Woltista</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h1 class="title"><span>Tilauslomake</span></h1>
+                <div class="contents">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1543.6001543187142!2d29.747711188076362!3d62.60733105594482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469b87007973205f%3A0x37dd2580c7551601!2sTasty!5e0!3m2!1sen!2sfi!4v1741165640968!5m2!1sen!2sfi"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <form action="mailto:tastyds.orders@gmail.com" method="POST" enctype="text/plain">
+                        <h3>Ota yhteyttä</h3>
+                        <div class="input-box">
+                            <span class="fas fa-user"></span>
+                            <input type="text" name="name" placeholder="Nimi" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-envelope"></span>
+                            <input type="email" name="email" placeholder="Sähköposti" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-phone"></span>
+                            <input type="tel" name="phone" placeholder="Puhelinnumero" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-building"></span>
+                            <input type="text" name="company" placeholder="Yritys (valinnainen)">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-tag"></span>
+                            <select name="subject" required>
+                                <option value="">Valitse aihe</option>
+                                <option value="general">Yleinen kysely</option>
+                                <option value="cakes">Tilauskakut</option>
+                                <option value="cafe">Kahvila</option>
+                                <option value="feedback">Palautetta</option>
+                                <option value="other">Muu</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-calendar"></span>
+                            <input type="date" name="preferred_date" placeholder="Toivottu vastauspäivä">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-clock"></span>
+                            <select name="preferred_time">
+                                <option value="">Valitse sopiva aika</option>
+                                <option value="morning">Aamu (8-12)</option>
+                                <option value="afternoon">Iltapäivä (12-17)</option>
+                                <option value="evening">Ilta (17-20)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="fas fa-comment"></span>
+                            <textarea name="message" placeholder="Viesti" required></textarea>
+                        </div>
+
+                        <div class="input-box checkbox-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                Haluan tilata uutiskirjeen
+                            </label>
+                        </div>
+
+                        <div class="input-box checkbox-group">
+                            <label>
+                                <input type="checkbox" name="gdpr" required>
+                                Hyväksyn tietojeni käsittelyn
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="social-media">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-instagram"></a>
+            </div>
+            <div class="links">
+                <a href="#home">Etusivu</a>
+                <a href="#order-cakes">Tilauskakut</a>
+                <a href="#cafe">Kahvila</a>
+                <a href="#contact">Yhteystiedot</a>
+            </div>
+            <div class="credits">
+                created by <span>anttidoes</span> | all rights reserved.
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html> 

@@ -1,0 +1,684 @@
+:root {
+    --main-color: #d8a4ac;
+    --nav-color: #d8a4ac;
+    --bg-color: #fff5f6;
+    --black: #2f4858;
+    --card-color: #f7c6cc;
+    --border: 0.1rem solid var(--card-color);
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --secondary-color: #8b4513;
+    --white: #fff;
+    --gray: #ccc;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: var(--font-family);
+    transition: var(--transition);
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+/* Common Components */
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2.5rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.title {
+    text-shadow: 2px 2px 0 var(--card-color),
+                -2px -2px 0 var(--card-color),
+                -2px 2px 0 var(--card-color),
+                2px -2px 0 var(--card-color);
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    font-size: 4rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--main-color), transparent);
+    box-shadow: 0 2px 5px rgba(216, 164, 172, 0.3);
+}
+
+.title span {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.8rem;
+    margin: -2rem 0 3rem;
+    padding: 0 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom, var(--nav-color), #c88e96);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16vh;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .logo img {
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.header .navbar a {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 0 1rem;
+}
+
+.header .navbar .delivery-link {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.header .navbar .delivery-link:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.header .navbar a:hover {
+    color: var(--black);
+    border-top: 0.3rem solid var(--black);
+    border-bottom: 0.3rem solid var(--black);
+    padding: 0.5rem 0;
+}
+
+.header .navbar .delivery-link:hover {
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.header .icons {
+    display: flex;
+}
+
+.header .icons div {
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--black);
+}
+
+.header .icons .menu-icon {
+    display: none;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 84vh;
+    margin-top: 16vh;
+    background-image: url("images/BurgerWithFriesAndKetchup2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .hero {
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home .hero h1 {
+    font-size: 7rem;
+    text-transform: none;
+    color: var(--white);
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5),
+                 -1.5px -1.5px 3px rgba(0, 0, 0, 0.5),
+                 -1.5px 1.5px 3px rgba(0, 0, 0, 0.5),
+                 1.5px -1.5px 3px rgba(0, 0, 0, 0.5);
+    padding: 25px 50px;
+    display: inline-block;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: rotate(-2deg);
+    animation: float 3s ease-in-out infinite;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.2;
+}
+
+.home .hero h1::first-letter {
+    font-size: 1.8em;
+    color: var(--white);
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5),
+                 -1.5px -1.5px 3px rgba(0, 0, 0, 0.5),
+                 -1.5px 1.5px 3px rgba(0, 0, 0, 0.5),
+                 1.5px -1.5px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    transform: translateY(-8px);
+    margin-right: 4px;
+}
+
+.home .hero p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3.2rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 25px 50px;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transform: rotate(1deg);
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(var(--rotation));
+    }
+    50% {
+        transform: translateY(-10px) rotate(var(--rotation));
+    }
+    100% {
+        transform: translateY(0px) rotate(var(--rotation));
+    }
+}
+
+.home .hero h1 {
+    --rotation: -2deg;
+}
+
+.home .hero p {
+    --rotation: 1deg;
+}
+
+/* Card Components */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.cafe-info {
+    margin: 2rem 0 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cafe-info .info-box {
+    background-color: var(--card-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    max-width: 80rem;
+    box-shadow: var(--box-shadow);
+}
+
+.cafe-info .info-box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cafe-info .info-box p {
+    color: var(--black);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cafe-info .opening-hours {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.cafe-info .opening-hours h4 {
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cafe-info .opening-hours p {
+    color: var(--black);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: var(--card-color);
+    border: var(--border);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.card .img {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .img img {
+    transform: scale(1.1);
+}
+
+.card .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.card .content a:first-child {
+    font-size: 2.5rem;
+    color: var(--black);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.card .content p {
+    color: var(--black);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Order Form Section */
+.order-form {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.order-form .subtitle {
+    text-shadow: 2px 2px 0 var(--card-color),
+                -2px -2px 0 var(--card-color),
+                -2px 2px 0 var(--card-color),
+                2px -2px 0 var(--card-color);
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+.order-form .subtitle span {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.order-form .contents {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.order-form form {
+    width: 100%;
+    max-width: 60rem;
+    text-align: center;
+}
+
+.order-form form h3 {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+.order-form .input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.order-form .input-box span {
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.order-form .input-box input,
+.order-form .input-box select,
+.order-form .input-box textarea {
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    border: none;
+}
+
+.order-form .input-box textarea {
+    min-height: 15rem;
+    resize: vertical;
+}
+
+.order-form .input-box input:focus,
+.order-form .input-box select:focus,
+.order-form .input-box textarea:focus {
+    outline: none;
+}
+
+.order-form button {
+    margin-top: 2rem;
+}
+
+/* Contact Section */
+.contact {
+    display: none;
+}
+
+.contact .contents {
+    display: flex;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .contents iframe {
+    height: 50rem;
+    flex: 1 1 45rem;
+    object-fit: cover;
+}
+
+.contact .contents form {
+    height: 50rem;
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.contact .contents form h3 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 3.5rem;
+    padding: 1.5rem 0;
+}
+
+.contact .contents form .input-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    border: var(--border);
+}
+
+.contact .contents form .input-box span {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+
+.contact .contents form .input-box input,
+.contact .contents form .input-box textarea {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.contact .contents form .input-box textarea {
+    min-height: 15rem;
+    resize: vertical;
+}
+
+.contact .contents form .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: none;
+    background: none;
+}
+
+.contact .contents form .checkbox-group label {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.contact .contents form .checkbox-group input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.contact .contents form .input-box select {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 2rem center;
+    background-size: 2rem;
+}
+
+.contact .contents form .input-box select:focus {
+    outline: none;
+}
+
+.contact .contents form .input-box input[type="date"] {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.contact .contents form .input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer .social-media {
+    padding: 1rem 0;
+}
+
+.footer .social-media a {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--white);
+    border: var(--border);
+    margin: 0.5rem;
+}
+
+.footer .social-media a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: 0.7rem 2rem;
+    color: var(--white);
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .credits {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credits span {
+    color: var(--main-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+    .header .logo img {
+        height: 9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem;
+    }
+    .header .icons .menu-icon {
+        display: inline-block;
+    }
+    .home {
+        background-position: left;
+    }
+    .home .hero h3 {
+        font-size: 4.5rem;
+    }
+    .home .hero p {
+        font-size: 1.5rem;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        background-color: var(--white);
+        height: 80vh;
+    }
+    .header .navbar.active {
+        right: 0;
+    }
+    .header .navbar a {
+        color: var(--main-color);
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 50%;
+    }
+}
