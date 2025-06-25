@@ -688,6 +688,7 @@ section {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
-  margin-bottom: 3rem; /* Added more space below the button */
+  margin-bottom: 3rem;
 }
