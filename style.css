@@ -682,3 +682,12 @@ section {
         font-size: 50%;
     }
 }
+
+.order-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem; /* Added more space below the button */
+}

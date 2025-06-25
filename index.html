@@ -45,12 +45,23 @@
             <section class="order-cakes" id="order-cakes" aria-labelledby="cakes-title">
                 <h2 id="cakes-title" class="title">Tilaus<span>kakut</span></h2>
                 <p class="section-intro">Täällä voit selata kakkujamme ja löytää täydellisen valinnan juhliisi. 🩷<br>
-                    Tilata voit joko täyttämällä alla olevan tilauslomakkeen, soittamalla numeroon 045 6187 829 (englanniksi) tai
+                    Tilata voit joko alla olevasta napista, soittamalla numeroon 045 6187 829 (englanniksi) tai
                     tulemalla paikan päälle kahvilaamme.<br><br>
                     Kakkujen koot:<br>
                     Iso — 24 cm, n. 12-14 henkilölle.<br>
                     Pieni — 17 cm, n. 6-8 henkilölle.
                 </p>
+
+                                <div class="order-buttons">
+                    <span class="glf-button custom-button"
+                    data-glf-cuid="e9726381-ce42-452f-b72c-1945dd1eb41f"
+                    data-glf-ruid="0f18f6fc-ecaf-43c0-b627-1c9ff8dd6788">
+                    Tilaa kakku
+                </span>
+                
+        </div>
+        
+        <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
                 
                 <div class="wrapper">
                     <div class="card">
@@ -60,7 +71,7 @@
                         <div class="content">
                             <a>Diplomaattikakku</a>
                             <p>Klassinen diplomaattikakku, jossa on kermavaahtoa ja mansikoita. Täydellinen valinta syntymäpäiväjuhliin tai muihin erikoistilaisuuksiin.</p>
-                            <a class="btn btn-primary" href="#order-form">Tilaa kakku</a>
+                            <!-- <a class="btn btn-primary" href="#order-form">Tilaa kakku</a> -->
                         </div>
                     </div>
                     <div class="card">
@@ -70,7 +81,7 @@
                         <div class="content">
                             <a>Mustikkajuustokakku</a>
                             <p>Kotitekoinen mustikkajuustokakku tuoreilla mustikoilla. Herkullinen yhdistelmä pehmeää juustokakkua ja marjoja.</p>
-                            <a class="btn btn-primary" href="#order-form">Tilaa kakku</a>
+                            <!-- <a class="btn btn-primary" href="#order-form">Tilaa kakku</a> -->
                         </div>
                     </div>
                     <div class="card">
@@ -80,53 +91,25 @@
                         <div class="content">
                             <a>Appelsiinijuustokakku</a>
                             <p>Kermainen ja raikas juustokakku, jossa on täyteläinen appelsiinin maku ja rapea keksipohja. Täydellinen valinta sitrusherkkujen ystäville.</p>
-                            <a class="btn btn-primary" href="#order-form">Tilaa kakku</a>
+                            <!-- <a class="btn btn-primary" href="#order-form">Tilaa kakku</a> -->
                         </div>
                     </div>
                 </div>
-                <div class="order-form" id="order-form">
-                    <h2 class="subtitle">Tilaus<span>lomake</span></h2>
-                    <div class="contents">
-                        <form action="mailto:tastyds.orders@gmail.com" method="POST" enctype="text/plain">
-                            <h3>Tilaa kakku</h3>
-                            <div class="input-box">
-                                <span class="fas fa-user"></span>
-                                <input type="text" name="name" placeholder="Nimi" required>
-                            </div>
 
-                            <div class="input-box">
-                                <span class="fas fa-envelope"></span>
-                                <input type="email" name="email" placeholder="Sähköposti" required>
-                            </div>
 
-                            <div class="input-box">
-                                <span class="fas fa-phone"></span>
-                                <input type="tel" name="phone" placeholder="Puhelinnumero" required>
-                            </div>
 
-                     <!--       <div class="input-box">
-                                <span class="fas fa-cake-candles"></span>
-                                <select name="cake" required>
-                                    <option value="">Valitse kakku</option>
-                                    <option value="diplomat">Diplomaattikakku</option>
-                                    <option value="blueberry">Mustikkajuustokakku</option>
-                                    <option value="chocolate">Suklaakakku</option>
-                                </select>
-                            </div>
-                        
-                            <div class="input-box">
-                                <span class="fas fa-calendar"></span>
-                                <input type="date" name="date" required>
-                            </div>
-                        -->
-                            <div class="input-box">
+                         <!--   <div class="input-box">
                                 <span class="fas fa-comment"></span>
                                 <textarea name="message" placeholder="Viesti" required></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Lähetä tilaus</button>
                         </form>
+
+                        -->
                     </div>
+
+                
                 </div>
             </section>
             <section class="cafe" id="cafe">
@@ -175,76 +158,6 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                    <form action="mailto:tastyds.orders@gmail.com" method="POST" enctype="text/plain">
-                        <h3>Ota yhteyttä</h3>
-                        <div class="input-box">
-                            <span class="fas fa-user"></span>
-                            <input type="text" name="name" placeholder="Nimi" required>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-envelope"></span>
-                            <input type="email" name="email" placeholder="Sähköposti" required>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-phone"></span>
-                            <input type="tel" name="phone" placeholder="Puhelinnumero" required>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-building"></span>
-                            <input type="text" name="company" placeholder="Yritys (valinnainen)">
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-tag"></span>
-                            <select name="subject" required>
-                                <option value="">Valitse aihe</option>
-                                <option value="general">Yleinen kysely</option>
-                                <option value="cakes">Tilauskakut</option>
-                                <option value="cafe">Kahvila</option>
-                                <option value="feedback">Palautetta</option>
-                                <option value="other">Muu</option>
-                            </select>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-calendar"></span>
-                            <input type="date" name="preferred_date" placeholder="Toivottu vastauspäivä">
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-clock"></span>
-                            <select name="preferred_time">
-                                <option value="">Valitse sopiva aika</option>
-                                <option value="morning">Aamu (8-12)</option>
-                                <option value="afternoon">Iltapäivä (12-17)</option>
-                                <option value="evening">Ilta (17-20)</option>
-                            </select>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="fas fa-comment"></span>
-                            <textarea name="message" placeholder="Viesti" required></textarea>
-                        </div>
-
-                        <div class="input-box checkbox-group">
-                            <label>
-                                <input type="checkbox" name="newsletter" value="yes">
-                                Haluan tilata uutiskirjeen
-                            </label>
-                        </div>
-
-                        <div class="input-box checkbox-group">
-                            <label>
-                                <input type="checkbox" name="gdpr" required>
-                                Hyväksyn tietojeni käsittelyn
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Lähetä viesti</button>
-                    </form>
                 </div>
             </section>
         </main>
@@ -265,4 +178,4 @@
         </footer>
         <script src="script.js"></script>
     </body>
-</html> 
+</html>
