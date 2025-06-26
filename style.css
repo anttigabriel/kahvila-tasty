@@ -72,7 +72,7 @@ section {
                 -2px 2px 0 var(--card-color),
                 2px -2px 0 var(--card-color);
     text-align: center;
-    color: var(--white);
+    color: var(--secondary-color);
     text-transform: uppercase;
     padding: 3.5rem 0;
     font-size: 4rem;
@@ -91,7 +91,7 @@ section {
 }
 
 .title span {
-    color: var(--white);
+    color: var(--secondary-color);
     text-transform: uppercase;
 }
 
@@ -159,6 +159,7 @@ section {
     border: none;
     padding: 0.5rem 1.5rem;
 }
+
 
 .header .icons {
     display: flex;
@@ -462,7 +463,7 @@ section {
 
 /* Contact Section */
 .contact {
-    display: none;
+    display: block;
 }
 
 .contact .contents {
@@ -669,11 +670,17 @@ section {
         right: 0;
     }
     .header .navbar a {
-        color: var(--main-color);
+        color: var(--black);
         display: block;
         font-size: 2rem;
         padding: 0.5rem;
         margin: 1.5rem;
+    }
+    .header .navbar.active .wolt-button,
+    .header .navbar.active .foodora-button {
+        background: transparent !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
     }
 }
 
@@ -681,6 +688,28 @@ section {
     html {
         font-size: 50%;
     }
+}
+
+@media (min-width: 769px) {
+  .header .navbar .wolt-button,
+  .header .navbar .foodora-button,
+  .header .navbar .menu-button {
+    padding: 1.2rem 2.8rem !important;
+    font-size: 2rem !important;
+    min-width: 140px !important;
+    border-radius: 0.7rem !important;
+    color: #fff !important;
+    text-align: center;
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .header .navbar .menu-button {
+    background-color: #ff9800 !important;
+  }
+  .header .navbar .menu-button:hover {
+    background-color: #e65100 !important;
+  }
 }
 
 .order-buttons {
@@ -691,4 +720,81 @@ section {
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.wolt-btn {
+  background-color: #009de0;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  display: inline-block;
+  transition: var(--transition);
+}
+.wolt-btn:hover {
+  background-color: #007bbd;
+  color: #fff;
+}
+
+.foodora-btn {
+  background-color: #ff2b7e;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  display: inline-block;
+  transition: var(--transition);
+}
+.foodora-btn:hover {
+  background-color: #d81b60;
+  color: #fff;
+}
+
+.glf-button {
+    min-width: 160px !important;
+    width: 160px !important;
+    height: 56px !important;
+    line-height: 56px !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    text-align: center !important;
+    margin: 0 5px !important;
+    border-radius: 4px !important;
+    font-size: 20px !important;
+}
+
+.wolt-button {
+    background-color: #009de0 !important;
+}
+
+.wolt-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.foodora-button {
+    background-color: #ff2b7e !important;
+}
+
+.foodora-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Ensure links inside buttons inherit the button's styling */
+.glf-button a {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 56px !important;
+    padding: 0 !important;
+}
+
+.wolt-button a,
+.foodora-button a {
+    font-size: 20px !important;
 }
