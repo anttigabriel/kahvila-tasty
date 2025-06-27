@@ -187,7 +187,7 @@ section {
     justify-content: center;
     min-height: 84vh;
     margin-top: 16vh;
-    background-image: url("images/BurgerWithFriesAndKetchup2.jpg");
+    background-image: url("images/KahvilaTastyFromOutsideSummer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,14 +202,19 @@ section {
 }
 
 .home .hero h1 {
-    font-size: 7rem;
+    position: relative;
+    font-size: 5rem;
     text-transform: none;
     color: var(--white);
     text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5),
                  -1.5px -1.5px 3px rgba(0, 0, 0, 0.5),
                  -1.5px 1.5px 3px rgba(0, 0, 0, 0.5),
                  1.5px -1.5px 3px rgba(0, 0, 0, 0.5);
-    padding: 25px 50px;
+    background: rgba(0,0,0,0.55);
+    padding: 30px 60px;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
     display: inline-block;
     font-family: 'Great Vibes', cursive;
     letter-spacing: 3px;
@@ -217,8 +222,8 @@ section {
     transform: rotate(-2deg);
     animation: float 3s ease-in-out infinite;
     font-weight: 400;
-    position: relative;
     line-height: 1.2;
+    z-index: 2;
 }
 
 .home .hero h1::first-letter {
@@ -231,6 +236,7 @@ section {
     display: inline-block;
     transform: translateY(-8px);
     margin-right: 4px;
+    font-weight: 400;
 }
 
 .home .hero p {
@@ -797,4 +803,31 @@ section {
 .wolt-button a,
 .foodora-button a {
     font-size: 20px !important;
+}
+
+/* Cafe section photo styling */
+.cafe-photo {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cafe-photo img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 600px) {
+  .home .hero h1 {
+    white-space: nowrap;
+  }
 }
